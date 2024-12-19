@@ -1,0 +1,28 @@
+### createAuction
+
+POST http://localhost:8080/auction
+Content-Type: application/json
+
+{
+  "product_name": "product name",
+	"category": "categoria",
+	"description": "descrição descrição descrição descrição descrição descrição descrição descrição ",
+	"condition": 0
+}
+
+### createBid
+POST http://localhost:8080/bid
+Content-Type: application/json
+
+{
+	"user_id": "4d4ee4c5-cf8f-4c7a-8a95-3eda1fa1e008",
+	"auction_id": "3e1500ae-6d90-4454-9dbf-6b70c26d41b7",
+	"amount": 1000
+}
+
+###
+GET http://localhost:8080/auction?status=0
+
+###
+GET http://localhost:8080/bid/4fdfc831-d055-4b07-8144-69de6eed9aaa
+
